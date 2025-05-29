@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import { sequelize, connectToDb } from './config/db';
 import { createModels } from './db/index';
 import { connectToRedis, createLimiter } from './config/redis';
