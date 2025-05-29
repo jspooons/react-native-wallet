@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "start:watch": "tsc-watch --onSuccess \"node dist/src/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:sync": "node dist/scripts/sync-database-schema/index.js"
+  },
+  "keywords": [],
+  "author": "jspooons",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.5.0",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.16.0",
+    "pg-hstore": "^2.3.4",
+    "rate-limit-redis": "^4.2.0",
+    "redis": "^5.1.1",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.22",
+    "@types/node": "^22.15.23",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^7.0.0",
+    "typescript": "^5.8.3"
+  }
+}

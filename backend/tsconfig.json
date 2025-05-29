@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "lib": [
+      "es2017"
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "scripts/**/*.ts",
+    "src/server.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "mobile",
+  ],
+}
